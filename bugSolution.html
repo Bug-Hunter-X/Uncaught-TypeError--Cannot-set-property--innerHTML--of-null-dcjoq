@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    // Correct approach: Accessing the element after it's defined in HTML
+    document.getElementById("myDiv").innerHTML = "Text changed!";
+  </script>
+</body>
+</html>
