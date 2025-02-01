@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    // Incorrectly referencing an element by ID before it's defined in the HTML
+    document.getElementById("myDiv").innerHTML = "Text changed!";
+    //This line will throw an error: Uncaught TypeError: Cannot set property 'innerHTML' of null
+  </script>
+</body>
+</html>
